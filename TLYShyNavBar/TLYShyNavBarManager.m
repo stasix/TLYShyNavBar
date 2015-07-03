@@ -357,7 +357,8 @@ static inline CGFloat AACStatusBarHeight()
     self.previousScrollInsets = scrollInsets;
     
     [self.navBarController expand];
-    [self.extensionViewContainer.superview bringSubviewToFront:self.extensionViewContainer];
+    
+//    [self.extensionViewContainer.superview bringSubviewToFront:self.extensionViewContainer];
 
     [self.scrollView tly_smartSetInsets:scrollInsets];
 }
